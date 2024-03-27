@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JibbleGroup.SampleConsoleApp.Application\JibbleGroup.SampleConsoleApp.Application.csproj" />
+    <ProjectReference Include="..\JibbleGroup.SampleConsoleApp.Domain\JibbleGroup.SampleConsoleApp.Domain.csproj" />
+    <ProjectReference Include="..\JibbleGroup.SampleConsoleApp.Infrastructure\JibbleGroup.SampleConsoleApp.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
