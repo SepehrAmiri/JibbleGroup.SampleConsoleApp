@@ -1,74 +1,52 @@
-# OData People Explorer (JibbleGroup.SampleConsoleApp)
+# JibbleGroup Sample Console Application
 
-## Introduction
-OData People Explorer is a C# console application that interacts with the public OData API v4. It's designed to demonstrate clean architecture principles, Domain-Driven Design (DDD), and best practices in software development.
+## Overview
+This console application is designed as a coding exercise for the Jibble Group interview process. It utilizes the public OData API v4 to demonstrate various operations on a dataset of people.
 
 ## Features
-•  [**List People**]: Retrieve and display a list of people from the OData service.
+•  [**List People**](https://www.bing.com/search?form=SKPBOT&q=List%20People): Fetch and display a list of people from the OData service.
 
-•  [**Search People**]: Allows users to search for people by name or other criteria.
+•  [**Search/Filter People**](https://www.bing.com/search?form=SKPBOT&q=Search%2FFilter%20People): Provide functionality to search and filter people based on specific criteria.
 
-•  [**Person Details**]: View detailed information about a specific person.
+•  [**View Person Details**](https://www.bing.com/search?form=SKPBOT&q=View%20Person%20Details): Display detailed information about a selected individual.
 
-•  [**Create New Person**]: Add a new person to the OData service.
+•  [**Modify Data**](https://www.bing.com/search?form=SKPBOT&q=Modify%20Data): Allow modifications to the data of a person (subject to API permissions).
 
-•  [**Delete Existing Person**]: Remove a person's details from the OData service.
+•  [**Clean Architecture**](https://www.bing.com/search?form=SKPBOT&q=Clean%20Architecture): Adheres to Clean Architecture principles for a maintainable and scalable codebase.
+
+•  [**Domain-Driven Design**](https://www.bing.com/search?form=SKPBOT&q=Domain-Driven%20Design): Incorporates DDD methodologies for a robust business logic layer.
+
+•  [**Repository Pattern**](https://www.bing.com/search?form=SKPBOT&q=Repository%20Pattern): Utilizes the Repository pattern for data access abstraction.
+
+•  [**CQRS with MediatR**](https://www.bing.com/search?form=SKPBOT&q=CQRS%20with%20MediatR): Implements Command Query Responsibility Segregation (CQRS) using the MediatR library.
+
+•  [**Dependency Injection**](https://www.bing.com/search?form=SKPBOT&q=Dependency%20Injection): Leverages .NET's built-in dependency injection features for better testing and decoupling.
+
+
+## Prerequisites
+•  [.NET 8.0 SDK](https://dotnet.microsoft.com/download) or later
+
+•  [Visual Studio 2022](https://visualstudio.microsoft.com/vs/express/) or later
 
 
 ## Getting Started
-To run the OData People Explorer, follow these steps:
+1. Clone the repository using `git clone https://github.com/SepehrAmiri/JibbleGroup.SampleConsoleApp.git`.
+2. Open the solution file `JibbleGroup.SampleConsoleApp.sln` in Visual Studio.
+3. Restore the NuGet packages by right-clicking on the solution and selecting "Restore NuGet Packages".
+4. Build the solution by pressing `Ctrl+Shift+B` or using the "Build Solution" option.
+5. Run the application by pressing `F5` or using the "Start Debugging" option.
 
-1. Clone the repository to your local machine.
-2. Ensure you have [.NET 8.0 SDK](https://dotnet.microsoft.com/download) or later installed.
-3. Navigate to the project directory in your terminal.
-4. Run `dotnet restore` to install necessary packages.
-5. Execute `dotnet run` to start the application.
-
-## Architecture
-This project follows Clean Architecture principles, structured into the following layers:
-
-•  [**Domain**]: Contains the business logic and entities.
-
-•  [**Application**]: Handles use cases and application logic.
-
-•  [**Infrastructure**]: Manages data persistence and external concerns.
-
-•  [**Presentation**]: The console interface for user interaction.
-
-
-## Technologies
-•  **C#**: The primary programming language used.
-
-•  [**OData Connected Service 2022**]: For consuming OData services.
-
-•  [**MediatR**]: For implementing CQRS pattern.
-
-•  [**Dependency Injection**]: Built-in .NET Core feature used for DI.
-
+## Usage
+The application will prompt you with available commands once started. Use the console interface to interact with the application and perform the desired operations.
 
 ## Contributing
-Contributions are welcome. Please open an issue first to discuss what you would like to change or add.
-
+If you would like to contribute to this project, please fork the repository and submit a pull request with your proposed changes.
 
 ## License
-MIT License
+This project is licensed under the MIT License 
 
-Copyright (c) [year] [copyright holders]
+## Acknowledgments
+•  OData Team for providing the public OData API used in this project.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+•  Jibble Group for the opportunity to undertake this coding exercise.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
